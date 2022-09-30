@@ -1,6 +1,10 @@
+// Name: Count set bits in an integer
+// Practice: https://practice.geeksforgeeks.org/problems/set-bits0143/1
+// Article: https://www.geeksforgeeks.org/count-set-bits-in-an-integer/
+
+
 #include<iostream>
 using namespace std;
-
 
 int countSetBit(int n){
     int cnt = 0;
