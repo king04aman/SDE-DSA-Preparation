@@ -5,7 +5,25 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int flipBits(int num){
+    int n= num, mask = 0;
+    if(num <= 0)
+        return 0;
+    
+    while(n!=0){
+        mask = (mask << 1) | 1;
+        n = n >> 1;
+    }
+    
+    int temp = (~num) & mask;
+    return temp;
+}
 
+int main(){
+    int n;
+    cout << "Enter a number: " << endl;
+    cin >> n;
+
+    cout << "After flipping bits: " << flipBits(n) << endl;
     return 0;
 }
