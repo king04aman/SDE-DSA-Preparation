@@ -9,7 +9,7 @@ Deletion is also a more than one step process. We shall learn with pictorial rep
 - The left (previous) node of the target node now should point to the next node of the target node - 
     ```cpp
     LeftNode -> next −> TargetNode -> next;  
-    ``` 
+    ```
     <p align="center">
         <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_1.jpg">
     </p>
