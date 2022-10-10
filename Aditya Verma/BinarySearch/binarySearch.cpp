@@ -7,16 +7,14 @@ int binarSearch(vector<int> &nums, int target){
 
     while(start <= end){
         mid = start + (end - start) / 2;
-        if(nums[mid] == target){
-            return mid;
-        }
 
-        if(nums[mid] < target){
+        if(nums[mid] == target)
+            return mid;
+
+        if(nums[mid] < target)
             start = mid + 1;
-        }
-        else{
+        else
             end = mid - 1;
-        }
     }
 
     return -1;
