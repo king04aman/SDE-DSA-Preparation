@@ -14,7 +14,6 @@ int getRotation(vector<int> &nums){
         else
             end = mid;
     }
-
     return start;
 }
 
