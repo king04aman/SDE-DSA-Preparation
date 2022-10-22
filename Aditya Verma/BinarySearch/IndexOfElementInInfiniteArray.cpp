@@ -23,8 +23,7 @@ int search(vector<int> &nums, int target){
     return -1;
 }
 
-
-
+// Driver Code
 int main()
 {
     vector<int> nums {1,2,3,4,5,6,7,8,9,11,13,15,17,18,19,22,24,26,28,29,32,35}; //... infinite

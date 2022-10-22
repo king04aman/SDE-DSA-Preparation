@@ -39,6 +39,7 @@ vector<int> getFirstAndLastOcc(vector<int> &nums, int target){
     return ans;
 }
 
+// Driver Code
 int main()
 {
     vector<int> nums{2,3,9,9,9,9,9,11,14,18};

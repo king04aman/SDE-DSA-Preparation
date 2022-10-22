@@ -20,7 +20,7 @@ int getNextLetter(vector<char> &alpha, char target){
     return ans;
 }
 
-
+// Driver Code
 int main()
 {
     vector<char> alpha {'a', 'c', 'f', 'h'};
