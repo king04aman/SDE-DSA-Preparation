@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Getting floor of an element using binary search.
 int getFloor(vector<int> &nums, int target){
     int start = 0, mid = 0, end = nums.size() - 1;
     int ans = -1;
@@ -24,6 +25,7 @@ int getFloor(vector<int> &nums, int target){
     return ans;
 }
 
+// Getting ceil of an element using binary search.
 int getCeil(vector<int> &nums, int target){
     int start = 0, mid = 0, end = nums.size() - 1;
     int ans = -1;

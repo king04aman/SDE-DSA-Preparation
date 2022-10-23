@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Searching the first occurance of 1 in binary infinite sorted array.
 int getFirstOne(vector<int> &nums){
     int start = 0, mid = 0, end = 1;
     int ans = -1;

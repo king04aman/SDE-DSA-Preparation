@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 
+// Binary Search on descending sorted array.
 int binarySearch(vector<int> &nums, int target){
     int start = 0, mid = 0, end = nums.size() - 1;
 

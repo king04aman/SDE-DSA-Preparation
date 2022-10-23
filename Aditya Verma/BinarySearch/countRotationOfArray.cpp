@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-// Method 1
+// Method 1: Count Number of rotation in an array.
 int getRotation(vector<int> &nums){
     int start = 0, mid = 0, end = nums.size() - 1;
 
@@ -17,7 +17,7 @@ int getRotation(vector<int> &nums){
     return start;
 }
 
-// Method 2
+// Method 2: Count Number of rotation in an array.
 int getRotations(vector<int> &nums){
     int start = 0, mid = 0, size = nums.size(), end = size - 1;
 
@@ -42,6 +42,7 @@ int main()
 {
     vector<int> nums = {2,4,5,1,2};
 
+    //cout << getRotation(nums) << endl;
     cout << getRotations(nums) << endl;
 
     return 0;

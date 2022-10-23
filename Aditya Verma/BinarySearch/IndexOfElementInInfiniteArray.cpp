@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Searcing an element in infinite sorted array. 
 int search(vector<int> &nums, int target){
     int start = 0, mid = 0, end = 1;
 

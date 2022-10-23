@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Binary Search on nearly sorted array.
 int search(vector<int> &nums, int target){
     int start = 0, mid = 0, size = nums.size(), end = size - 1;
 

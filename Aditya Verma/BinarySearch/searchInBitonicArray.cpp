@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Getting the index of peak element in bitonic sorted array.
 int getPeak(vector<int> &nums){
     int start = 0, mid = 0, end = nums.size() - 1;
 
@@ -17,6 +18,7 @@ int getPeak(vector<int> &nums){
     return start;
 }
 
+// Binary Search on acending sorted array.
 int ascendingSearch(vector<int> &nums, int target, int start, int end){
 
     while(start <= end){
@@ -34,6 +36,7 @@ int ascendingSearch(vector<int> &nums, int target, int start, int end){
     return -1;
 }
 
+// Binary Search on descending sorted array. 
 int descendingSearch(vector<int> &nums, int target, int start, int end){
 
     while(start <= end){

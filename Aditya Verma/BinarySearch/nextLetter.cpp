@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Getting just letter of an element in sorted array using binary search.
 int getNextLetter(vector<char> &alpha, char target){
     int start = 0, mid = 0, end = alpha.size() - 1;
     int ans = -1;

@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Peak Element using binary search
 int getPeakEle(vector<int> &nums){
     int start = 0, mid = 0, end = nums.size() - 1;
 

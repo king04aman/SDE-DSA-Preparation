@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Getting pivot/minimum element from sorted array.
 int getPivot(vector<int> nums){
     int start = 0, mid = 0, end = nums.size() - 1;
 
@@ -16,6 +17,7 @@ int getPivot(vector<int> nums){
     return start;
 }
 
+// Binary Search on given array.
 int binarySearch(vector<int> &nums, int target, int start, int end){
 
     while(start <= end){

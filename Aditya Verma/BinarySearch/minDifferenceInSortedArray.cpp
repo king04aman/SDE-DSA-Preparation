@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Getting the minimum difference of an element from an array using binary search.
 int getMinimumDifference(vector<int> &nums, int target){
     int start = 0, mid = 0, end = nums.size() - 1;
 

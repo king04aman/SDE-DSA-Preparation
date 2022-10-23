@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// First and last occurance of an element using binary search.
 vector<int> getFirstAndLastOcc(vector<int> &nums, int target){
     vector<int> ans(2,-1);
     int start = 0, mid = 0, end = nums.size() - 1;
