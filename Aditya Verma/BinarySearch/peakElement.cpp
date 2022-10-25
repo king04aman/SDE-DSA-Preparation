@@ -2,8 +2,8 @@
 #include<vector>
 using namespace std;
 
-// Getting unique element using binary search.
-int getUnique(vector<int> &nums){
+// 
+int getPeakEle(vector<int> &nums){
     int start = 0, mid = 0, size = nums.size(), end = size - 1;
 
     while(start <= end){
@@ -11,12 +11,12 @@ int getUnique(vector<int> &nums){
         int next = (mid + 1) % size;
         int prev = (mid + size - 1) % size;
 
-        if(nums[mid] != nums[next] && nums[mid] != nums[prev])
+        if(nums[mid] > nums[prev] && nums[mid] > nums[next])
             return nums[mid];
         
-        else if((mid % 2 && nums[mid] == nums[prev]) || (!(mid % 2) && nums[mid] == nums[next])) 
+        if(nums[next] > nums[mid])
             start = mid + 1;
-        else 
+        else
             end = mid - 1;
     }
 
@@ -26,9 +26,9 @@ int getUnique(vector<int> &nums){
 // Driver Code
 int main()
 {
-    vector<int> nums {1,1,3,3,5,5,6,6,9,9,11,11,13,13,15};
+    vector<int> nums {1,5,8,19,22,35,30,90,99,88};
 
-    cout << getUnique(nums) << endl;
+    cout << getPeakEle(nums) << endl;
 
     return 0;
 }
